@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NisChat</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+  <div class="navbar bg-base-100 shadow-md" id="nav">
+  <a class="btn btn-ghost normal-case text-xl">NisChat</a>
+  
+<div class="absolute right-0 mr-6">
+  <label class="swap swap-rotate">
+  
+  <!-- this hidden checkbox controls the state -->
+  <input type="checkbox" class="outline-none"/>
+  
+  <!-- sun icon -->
+  <svg class="swap-on fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>
+  
+  <!-- moon icon -->
+  <svg class="swap-off fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
+  
+</label>
+</div>
+</div>  
+   
+    
+   <!-- ChatBox -->
+       <div class="mt-2 mb-20" id="chat-box">
+       </div>
+   <!-- ChatBox end -->
+   
+   
+   
+    
+    <div class="w-full mt-4 fixed bottom-0 bg-base-100">            
+        <div class="relative m-2 flex shadow-2 top-2">
+        <input type="text" placeholder="Type here" class="input input-bordered mb-4 outline-none w-full" id="input"/>
+       <button class="absolute right-0 mr-5 mt-2 outline-none" id="submit">
+         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16" id="IconChangeColor"> <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" id="mainIconPathAttribute" stroke-width="0" stroke="#ff0000" filter="url(#shadow)"></path> <filter id="shadow"><feDropShadow id="shadowValue" stdDeviation="0" dx="0" dy="0" flood-color="black"></feDropShadow></filter><filter id="shadow"><feDropShadow id="shadowValue" stdDeviation=".5" dx="0" dy="0" flood-color="black"></feDropShadow></filter><filter id="shadow"><feDropShadow id="shadowValue" stdDeviation=".5" dx="0" dy="0" flood-color="black"></feDropShadow></filter><filter id="shadow"><feDropShadow id="shadowValue" stdDeviation=".5" dx="0" dy="0" flood-color="black"></feDropShadow></filter><filter id="shadow"><feDropShadow id="shadowValue" stdDeviation=".5" dx="0" dy="0" flood-color="black"></feDropShadow></filter></svg>
+         
+         </button>
+         </div>
+         </div>
+    
+    
+    
+    
+    <!-- Socket.io  -->
+    
+      <script src="/socket.io/socket.io.js"></script>
+  <script type="module">
+     const socket = io();
+     let submit = document.getElementById("submit");
+     let chatBox = document.getElementById('chat-box');
+
+
+                                    socket.on('connect',()=>{
+       submit.addEventListener('click',()=>{
+         let input = document.getElementById('input');  
+         socket.emit('message',input.value);
+         let div = document.createElement('div');
+         
+         
+         div.innerHTML = `<div class="chat chat-end">
+    <div class="chat-image avatar">
+    <div class="w-10 rounded-full">
+      <img src="https://cdn-icons-png.flaticon.com/512/666/666201.png" />
+    </div>
+  </div>
+  <div class="bg-primary chat-bubble">${input.value}</div>
+</div>`;
+    chatBox.appendChild(div);
+input.value = '';
+      
+       })
+         })
+    socket.on("response",(response)=>{
+      
+    let div = document.createElement('div');
+         
+         
+         div.innerHTML = `<div class="chat chat-start">
+           <div class="chat-image avatar">
+    <div class="w-10 rounded-full">
+      <img src="https://thumbs.dreamstime.com/b/ai-robot-head-chat-bot-icon-isolated-white-background-ai-robot-head-chat-bot-icon-109860127.jpg" />
+    </div>
+  </div>
+  <div class="chat-bubble">${response}</div>
+</div>
+`;
+
+    chatBox.appendChild(div);
+    window.scrollTo(0, document.body.scrollHeight);
+
+    });
+  </script>
+  
+    
+    
+    <!-- Theme Switch -->
+    
+    <script>
+  const toggleSwitch = document.querySelector('input[type="checkbox"]');
+  function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }    
+  }
+  toggleSwitch.addEventListener('change', switchTheme, false);
+
+
+</script>
+
+  
+
+</body>
+</html>
